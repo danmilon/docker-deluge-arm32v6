@@ -1,0 +1,7 @@
+#!/bin/sh
+
+exec s6-setuidgid deluge \
+       /usr/bin/deluged \
+         --do-not-daemonize \
+         --config /var/lib/deluge \
+         --loglevel info

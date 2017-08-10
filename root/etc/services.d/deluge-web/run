@@ -1,0 +1,6 @@
+#!/bin/sh
+
+exec s6-setuidgid deluge \
+       /usr/bin/deluge-web \
+         --config /var/lib/deluge \
+         --loglevel info
